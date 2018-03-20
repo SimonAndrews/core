@@ -74,6 +74,8 @@
     <Compile Include="LinqExtensions\PageUtilities.cs" />
     <Compile Include="PhoneNumberValidator\PhoneNumberValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextMerge\Interface\ITextMergeProvider.cs" />
+    <Compile Include="TextMerge\TextMergeProvider.cs" />
     <Compile Include="UnitTestHelper\UnitTestHelperExtensions.cs" />
     <Compile Include="UnitTestHelper\UnitTestHelper.cs" />
   </ItemGroup>
