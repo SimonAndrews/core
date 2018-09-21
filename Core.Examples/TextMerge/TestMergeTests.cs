@@ -37,7 +37,7 @@ Test Field is here >>> [TestField].
 FirstName is here >>> [FirstName].
 LastName is here >>> [LastName].
 
-TestLink click here >>> <a href='[TestLink]'>Linky</a>
+TestLink click here >>> <a href='[TestLink]'>Linky link link</a>
 ";
 
             // act
