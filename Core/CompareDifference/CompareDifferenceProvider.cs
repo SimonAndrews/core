@@ -16,18 +16,18 @@ namespace Core.CompareDifference
 
             foreach (var baseProperty in baseProperties)
             {
-                foreach (var changedPropery in changedProperties)
+                foreach (var changedProperty in changedProperties)
                 {
-                    if (baseProperty.Name == changedPropery.Name && baseProperty.PropertyType == changedPropery.PropertyType)
+                    if (baseProperty.Name == changedProperty.Name && baseProperty.PropertyType == changedProperty.PropertyType)
                     {
-                        if (!Equals(baseProperty.GetValue(baseObject, null), changedPropery.GetValue(changedObject, null)))
+                        if (!Equals(baseProperty.GetValue(baseObject, null), changedProperty.GetValue(changedObject, null)))
                         {
                             differences.Add(new Difference
                             {
                                 Type = baseProperty.PropertyType,
                                 PropertyName = baseProperty.Name,
                                 OriginalValue = baseProperty.GetValue(baseObject, null),
-                                NewValue = changedPropery.GetValue(changedObject, null)
+                                NewValue = changedProperty.GetValue(changedObject, null)
                             });
                         }
                     }
